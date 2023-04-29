@@ -26,7 +26,7 @@ export const AuthProvider: FC<Props> = ({ children }) => {
   function handleLogout() {
     setId("");
     setToken("");
-    navigate("/login");
+    navigate("/auth");
   }
 
   const value = {
