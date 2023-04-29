@@ -1,5 +1,6 @@
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import "react-toastify/dist/ReactToastify.css";
 import { AuthPage } from "./pages/AuthPage";
 import { DefaultLayout } from "./components/layout/DefaultLayout";
 import { ToastContainer } from "react-toastify";

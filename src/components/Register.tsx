@@ -11,7 +11,7 @@ export const Register = () => {
   const onFinish = async (value: IAuthRequest) => {
     const err = await register(value, onLogin!);
     if (err) {
-      toast.warning("Already Registered");
+      toast.warning(err);
       return;
     }
   };
@@ -34,7 +34,7 @@ export const Register = () => {
         <Input.Password />
       </Form.Item>
 
-      <Form.Item wrapperCol={{ offset: 8, span: 16 }}>
+      <Form.Item wrapperCol={{ offset: 0, span: 16 }}>
         <Button type="primary" htmlType="submit">
           Register
         </Button>
