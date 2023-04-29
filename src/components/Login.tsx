@@ -11,7 +11,7 @@ export const Login = () => {
   const onFinish = async (value: IAuthRequest) => {
     const err = await login(value, onLogin!);
     if (err) {
-      toast.warning(err);
+      toast.warning("Invalid Credentials");
     }
   };
 

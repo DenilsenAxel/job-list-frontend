@@ -11,7 +11,7 @@ export const Register = () => {
   const onFinish = async (value: IAuthRequest) => {
     const err = await register(value, onLogin!);
     if (err) {
-      toast.warning(err);
+      toast.warning("Already Registered");
       return;
     }
   };
